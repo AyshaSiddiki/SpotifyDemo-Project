@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Command line suite]">
+  <test name="Command line test" preserve-order="false">
+    <classes>
+      <class name="com.spotify.ui.test.BaseTest"/>
+      <class name="com.spotify.ui.test.SmokeTest"/>
+    </classes>
+  </test> <!-- Command line test -->
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="com.spotify.ui.test.SmokeTest">
+        <methods>
+          <include name="spotifyPageTest"/>
+          <include name="start"/>
+          <include name="helpPageTest"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- com.spotify.ui.test.SmokeTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->
